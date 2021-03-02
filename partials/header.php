@@ -11,4 +11,4 @@
         </svg>
         <h1>Spotify</h1>
     </div>
-</nav> 
+</nav>

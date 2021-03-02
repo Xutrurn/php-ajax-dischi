@@ -5,30 +5,40 @@ main {
     background-color: $backgroundColor;
     overflow-y: auto;
     .wrapper {
+        form {
+            margin: 0 0 30px 10px;
+            select {
+                padding: 5px 10px;
+            }
+            input {
+                margin-left: 10px;
+                padding: 5px 10px;
+            }
+        }
         .cards-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             .card {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                width: calc(100% / 5 - 20px);
+                justify-content: space-evenly;
+                width: calc(1440px / 5 - 20px);
                 height: 450px;
-                margin-bottom: 30px;
+                margin: 0 10px 30px 10px;
                 padding: 20px;
                 text-align: center;
                 border-radius: 10px;
                 background-color: $cardColor;
-                &:nth-child(5n + 5) {
-                    margin-right: 0;
-                }
                 .card-top {
                     @include card;
                     img {
+                        display: block;
                         width: 100%;
+                        min-height: 250px;
                         margin-bottom: 10px;
                         border-radius: 10px;
+                        object-fit: cover;
                     }
                     h3 {
                         color: #fff;
@@ -46,4 +56,4 @@ main {
             }
         }
     }
-} 
+}
